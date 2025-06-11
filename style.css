@@ -1,0 +1,282 @@
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:sans-serif ;
+}
+header{
+    position: fixed;/* Hace fija la barra menu*/
+    top:0;
+    left:0;
+    width:100%;
+    height: 80 px;
+    background:#fff ;
+    box-shadow: 0 4px 25px -22px black;/*Genera la sobra en la barra menu*/
+    z-index: 6; /*indica que lo de header esta por encima de otros elemntos */
+    
+}
+.headerCont{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between; 
+       
+}
+    
+
+.logo{
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.logo h1 b{
+    color:#46a2fd;
+}
+.Menu nav{
+    height:80px;
+    
+}
+.Menu nav ul{
+    height:100%;
+    display: flex;
+    list-style: none;
+}
+.Menu nav ul li {
+    height:100%;
+    margin:0px -350px 0px 380px ;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    font-size:20px;
+    
+    
+}
+.Menu nav :link{
+    text-decoration: none
+}
+.Menu nav :visited {
+ color: #000;              
+ text-decoration: none; 
+}
+nav ul li a:hover{
+    background-color: #46a2fd; 
+    border: 1px skyblue;
+    border-radius: 12px;
+    padding: 5px;
+    
+}
+/* Barra de busqueda*/
+#iconoLupa{
+    position: absolute;
+    right:150px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iconoLupa i{
+    font-size:18px;
+    color: #777777;
+    cursor: pointer;
+    transition: 300ms;
+}
+ #iconoLupa :hover{
+color: #46a2fd
+ }
+
+#ctn-bars-search{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    z-index: 5;
+    transition:  all 600ms; 
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+#listaBars {
+    position: fixed;
+    top: 145px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    background: #add6f8;
+    z-index:5;
+    overflow: hidden;
+    display: none;/*oculta la lista*/
+}
+#listaBars li a {
+    display: block;
+    width: 1000px;
+    color: #777777;
+    padding: 8px 15px;
+}
+#listaBars li a:hover{
+    background: #b4b2b2;
+}
+/*recuadro negro opcional*/
+#recuadroBars{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    display: none; /* oculta el recuadro*/
+}
+/*---------------------------------------------------------------------------------------*/
+body { padding-top: 80px; }
+header { z-index: 100; }
+/*cuadro del mes del padre*/
+ #cuadro h1 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight:bold;
+    color: aliceblue;
+    background-color: #46a2fd;
+    font-size: 34px;
+    text-align-last: center;
+    padding-block-end: 15px;
+    margin-top: 15px;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*----------------------------------------------------------------------------*/
+/*Galeria*/
+div.galeria {
+  margin: 8px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.galeria:hover {
+  border: 2px solid white;
+  
+   background-color:rgba(41, 121, 220, 0.5); 
+}
+
+div.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align:left;
+}
+div.contenedor-galeria{
+     margin-top: 50px;
+     margin-left:50px; 
+    
+     
+}
+
+/* desc1 info de venta*/
+#desc1{ font-size: 14px;}
+#desc1 mark{ background-color: #46a2fd;}
+
+/*------------------------------------------------------------------------------------------*/
+/*Estilo de Contactos*/
+#recuadro{
+  background-color: #46a2fd; 
+  width: 1050px;
+  height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+ .map{
+     float: right;
+    margin-top:30px;
+    margin-right: 30px;
+ }
+
+#encon{
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size:24px ; 
+    margin-top: 25px;
+    margin-left: 100px;
+}
+ 
+ .formulario form {
+      letter-spacing: 1px;
+         margin-left: 50px;
+            max-width: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:#fff
+        }
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+        
+        }
+
+
+#boton:hover {
+    background-color: #46a2fd; 
+    border: 2px solid;
+}
+ #icono {
+    margin-left: 55px;
+    font-size:36px ; 
+    letter-spacing: 4px;
+     margin-top:18px;
+
+ }
+ /*-------------------------------------------------------------*/
+ /*Servicios*/
+ 
+ .Fimg img{
+  margin-left: 80px;
+  margin-right: 50px;
+  margin-top: 35px;
+ }
+
+  .detalles-container {
+  display: flex;
+  align-items: flex-start; /* Todos alineados por arriba */
+  gap: 20px;               /* Espacio entre bloques */
+  margin-left: 45px;   
+ 
+}
+
+.detalles-container > div {
+  flex: 1;                 /* Cada bloque ocupa espacio equitativo */
+  min-width: 200px;        /* Establece ancho mínimo deseado */
+}
+
+.detalles-container div p {
+  font-size: 14px;
+}
+.detalles-container div b {
+  font-size: 25px;
+}
+/*------------------------*/
+/* Pagina en construcción*/ 
+#pag h1{
+    margin-right: 50px;
+    margin-left: 500px;
+    font-size: 48px;
+    margin-top: -200px;
+
+}
