@@ -40,16 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   // Validación en tiempo real
-  nombre.addEventListener('input', () => {
-    nombre.value = nombre.value.trim();
-    if (nombre.value === '') {
-      nombreError.textContent = 'El nombre es obligatorio';
-      nombre.classList.add('invalid');
-    } else {
-      nombreError.textContent = '';
-      nombre.classList.remove('invalid');
-    }
-  });
+ 
 
   correo.addEventListener('input', () => {
     const v = correo.value.trim();
